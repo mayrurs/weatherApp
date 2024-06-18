@@ -15,13 +15,13 @@ export class DashboardComponent {
     return this.model.getSensorData(sensor);
   }
 
-  get temperature(): number {
+  get temperature(): number | string {
     let data = this.model.getSensorData('temperature')
 
     if (data != undefined) {
       return data.value
     } else {
-      return -1000
+      return ""
     }
   }
 }

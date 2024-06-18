@@ -1,18 +1,19 @@
-<div class="row p-2">
-  <div class="col-sm-6">
-    <div class="card card-custom">
-      <div class="card-body">
-        <h5 class="card-title">Temperature</h5>
-        <p class="card-text"> {{ temperature }} </p>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card card-custom">
-      <div class="card-body">
-        <h5 class="card-title">Humidity</h5>
-        <p class="card-text"> {{ temperature }} </p>
-      </div>
+<div id="container">
+  <div class="card">
+    <img src="assets/weather-cloudy.svg" alt="Weather">
+
+    <!-- A div with card__details class to hold the details in the card  -->
+    <div class="card__details">
+
+      <!-- Span with tag class for the tag -->
+      <span class="tag">Wohnzimmer</span>
+
+      <!-- A div with name class for the name of the card -->
+      <div class="name">Temperatur</div>
+
+      <p>{{ temperature }} Grad</p>
+
+      <button>Details</button>
     </div>
   </div>
 </div>
